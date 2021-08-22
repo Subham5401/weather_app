@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Weather-images/image_2.png" type="image/png">
+</head>
+<body>
+    <div class="containers-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="/"><i class="far fa-snowflake"></i>Weather<i class="far fa-snowflake"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/weather">Weather <span class="sr-only">(current)</span></a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <!-- main header -->
+        <div class="containers-fluid main_header">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto"> 
+                    <!-- right side div -->
+                    <div class="main_content">
+                        <form class="temp_form">
+                            <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                            <input type="submit" value="search" id="submitbtn">
+                        </form>
+                    </div>
+                    <div class="temp_info">
+                        <div class="top_layer">
+                            <p id="day">Sunday</p>
+                            <p id="today_date">22 AUG</p>
+                        </div>
+                        <div class="main_layer">  
+                            <p id="result"></p>
+                            <div class="middle_layer">
+                                <p id="temp"><span id="temp_status_value">0</span><sup>o</sup>C</p>
+                                <p id="temp_status"> <i class="fa fa-cloud" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>            
+</header>
+<!-- Footer -->
+    <footer>
+        <p>&copy 2021 Weather</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('temp').style.display = "none";
+        document.getElementById('temp_status').style.display = "none";
+    </script>
+</body>
+</html>
